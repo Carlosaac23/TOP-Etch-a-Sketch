@@ -6,9 +6,6 @@
 
 body {
   background-color: #ededed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container {
@@ -18,7 +15,7 @@ body {
   gap: 30px;
 }
 
-.btn {
+.container__btn {
   margin-top: 1em;
   padding: 0.85em 1em;
   background-color: #dddddd;
@@ -30,12 +27,12 @@ body {
   transition: opacity 0.3s;
 }
 
-.btn:hover {
+.container__btn:hover {
   cursor: pointer;
   opacity: 0.6;
 }
 
-.grid-container {
+.container__grid-container {
   width: 800px;
   height: 800px;
   display: flex;
