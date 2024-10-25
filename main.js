@@ -5,7 +5,8 @@ btn.addEventListener('click', () => {
   // Clean the HTML
   container.innerHTML = '';
 
-  let squareSizeByUser = Number(prompt('How many squares do you want?'));
+  let squareSizeByUser = Number(prompt('Enter a grid size between 1 and 100'));
+  if (squareSizeByUser === 0) return alert('At leats one value');
   if (squareSizeByUser > 100) {
     alert('You should enter a smaller number than 100');
     return;
