@@ -1,5 +1,5 @@
-const container = document.querySelector('.grid-container');
-const btn = document.querySelector('.btn');
+const container = document.querySelector('.container__grid-container');
+const btn = document.querySelector('.container__btn');
 
 btn.addEventListener('click', () => {
   // Clean the HTML
@@ -7,13 +7,10 @@ btn.addEventListener('click', () => {
 
   let squareSizeByUser = Number(prompt('Enter a grid size between 1 and 100'));
   if (squareSizeByUser === 0) return alert('At leats one value');
-  if (squareSizeByUser > 100) {
-    alert('You should enter a smaller number than 100');
-    return;
-  }
+  if (squareSizeByUser > 100) return alert('You should enter a smaller number than 100');
 
   // Square size
-  const squareSize = 100 / squareSizeByUser;
+  let squareSize = 100 / squareSizeByUser;
 
   for (let i = 0; i < squareSizeByUser; i++) {
     for (let j = 0; j < squareSizeByUser; j++) {
